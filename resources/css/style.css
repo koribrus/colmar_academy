@@ -1,0 +1,152 @@
+* {
+    font-family: Montserrat, sans-serif;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 64px 1fr 128px;
+    grid-template-areas: 
+        'header'
+        'main'
+        'footer';
+}
+
+#button {
+    color: lightgrey;
+    background-color: darkslategray;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#media {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr 40%;
+    grid-column-gap: 40px;
+    margin: 32px 24px;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    position: fixed;
+    height: 64px;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    background-color: white;
+}
+
+header img {
+    display: inline-block;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    margin-right: 16px;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+ul {
+    list-style: none;
+}
+
+.grid_main {
+    display: grid;
+    grid-template: repeat(4, auto) / 1fr;
+    width: 100%;
+}
+
+.banner {
+    display: grid;
+    grid-template: 1fr / 1fr 40%;
+    grid-column-gap: 40px;
+    justify-content: center;
+    background-color: gray;
+    padding: 32px 24px;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.start_here {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+
+/* practicing grid items */
+.a {
+    grid-area: 1 / 1 / span 2 / span 1;
+}
+
+.b {
+    grid-area: 3 / 1 / span 1 / span 1;
+}
+
+.b h2 {
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+.c {
+    grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.d {
+    grid-area: 2 / 2/ span 1 / span 1;
+}
+
+.e {
+    grid-area: 3 / 2 / span 2 / span 1;
+}
+
+/* thesis exhibit grid items */
+.f {
+
+}
+
+.g {
+
+}
+
+.h {
+
+}
+
+.i {
+
+}
