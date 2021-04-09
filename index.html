@@ -8,13 +8,12 @@
         <meta name="description" content="Codecademy: Build a Website with HTML, CSS & Git; Colmar Academy">
         <title>Colmar Academy</title>
     </head>
-    
     <div id="grid">
-
         <header>
             <div class="logo">
                 <img src="resources/images/ic-logo.svg" alt="Colmar Academy logo" style="display: inline-block; height: 32px; margin-left: 24px;">
-                <p class="text" style="display: inline-block"><span style="font-weight: bold;">COLMAR</span>ACADEMY</p>
+                <p class="text" style="display: inline-block; font-size: 1em;"><span style="font-weight: bolder; 
+                color: rgb(48, 48, 48);">COLMAR</span><span style="color: gray; font-weight: 500;">ACADEMY</span></p>
             </div>
             <nav>
                 <ul>
@@ -25,7 +24,6 @@
                 </ul>
             </nav>
         </header>
-
         <main class="grid_main">
             <div class="banner">
                 <div>
@@ -38,90 +36,119 @@
                 </div>
             </div>
             <section id="media">
-                <img class="a" src="resources/images/information-main.jpg" alt="black man reading">
-                <div class="b">
-                    <h2>It doesn't hurt to keep practicing</h2>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 
-                        atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
-                    <h4>Emanuel, Sr Strategist at Hiring.com</h4>
+                <div>
+                    <img class="a" src="resources/images/information-main.jpg" alt="black man reading">
+                    <div class="b">
+                        <h2>It doesn't hurt to keep practicing</h2>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 
+                            atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+                        <h5>Emanuel, Sr Strategist at Hiring.com</h5>
+                    </div>
                 </div>
-
-                <ul>
-                    <li class="c">
-                        <h3>Orientation date</h3>
-                    </li>
-                    <li class="d">
-                        <h3>Our campus</h3>
-                    </li>
-                    <li class="e">
-                        <h3>Our guest lecture</h3>
-                    </li>
+                <div>
+                    <ul>
+                        <li class="grid_list c">
+                            <img src="resources/images/information-orientation.jpg" alt="walking path">
+                            <div style="margin-left: 16px; align-self: center;">
+                                <h3>Orientation date</h3>
+                                <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                                <h4>Read more</h4>
+                            </div>
+                        </li>
+                        <li class="grid_list d">
+                            <img src="resources/images/information-campus.jpg" alt="study hall">
+                            <div style="margin-left: 16px; align-self: center;">
+                                <h3>Our campus</h3>
+                                <p>Find which campus is close by you</p>
+                                <h4>Read more</h4>
+                            </div>
+                        </li>
+                        <li class="grid_list e">
+                            <img src="resources/images/information-guest-lecture.jpg" alt="Oliver Sack">
+                            <div style="margin-left: 16px; align-self: center;">
+                                <h3>Our guest lecture</h3>
+                                <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                                <h4>Read more</h4>
+                            </div>
+                        </li>
+                </div>
                 </ul>
             </section>
-            <section>
+            <section class="learning">
                 <h2>Start Learning</h2>
                 <div class="courses">
-                    <div>
-                        <img src=
-                        <h3></h3>
-                        <p></p>
+                    <div class="box">
+                        <img src="resources/images/course-software.jpg" alt="computer screens">
+                        <h3>Software engineering</h3>
+                        <p style="margin-top: 8px; margin-bottom: 8px;">COURSES</p>
+                        <P style="margin-top: 0;">Web Development, Mobile Development, iOT, APIs</P>
                     </div>
-                    <div>
-                        <img src=
-                        <h3></h3>
-                        <p></p>
+                    <div class="box">
+                        <img src="resources/images/course-computer-art.jpg" alt="mobile phone and coffee">
+                        <h3>Computer art</h3>
+                        <p style="margin-top: 8px; margin-bottom: 8px;">COURSES</p>
+                        <p style="margin-top: 0;">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
                     </div>
-                    <div>
-                        <img src=
-                        <h3></h3>
-                        <p></p>
+                    <div class="box">
+                        <img src="resources/images/course-design.jpg" alt="film camera in hands">
+                        <h3>Design</h3>
+                        <p style="margin-top: 8px; margin-bottom: 8px;">COURSES</p>
+                        <p style="margin-top: 0;">User Experience Design, User Research, Visual Design</p>
                     </div>
-                    <div>
-                        <img src=
-                        <h3></h3>
-                        <p></p>
+                    <div class="box">
+                        <img src="resources/images/course-data.jpg" alt="laptop">
+                        <h3>Data</h3>
+                        <p style="margin-top: 8px; margin-bottom: 8px;">COURSES</p>
+                        <p style="margin-top: 0;">Data Science, Big Data, SQL, Data Visualization</p>
                     </div>
-                    <div>
-                        <img src=
-                        <h3></h3>
-                        <p></p>
+                    <div class="box">
+                        <img src="resources/images/course-business.jpg" alt="chess board">
+                        <h3>Business</h3>
+                        <p style="margin-top: 8px; margin-bottom: 8px;">COURSES</p>
+                        <p style="margin-top: 0;">Product Development, Business Development, Startup</p>
                     </div>
-                    <div>
-                        <img src=
-                        <h3></h3>
-                        <p></p>
+                    <div class="box">
+                        <img src="resources/images/course-marketing.jpg" alt="smartwatch">
+                        <h3>Marketing</h3>
+                        <p style="margin-top: 8px; margin-bottom: 8px;">COURSES</p>
+                        <p style="margin-top: 0;">Analytics, Content Marketing, Mobile Marketing</p>
                     </div>
                 </div>
             </section>
-            <section>
-                <h3>Thesis exhibit</h3>
-                <div class="media">
+            <section class="thesis">
+                <h2>Thesis exhibit</h2>
+                <div id="media">
                     <div>
-                        <video width=60% height=auto controls>
+                        <video width=100% height=auto controls>
                             <source src="resources/videos/thesis.mp4" type="video/mp4">
                             Video not supported
                         </video>
-                        <h2>Reimagine urban</h2>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 
+                        <h3>Reimagine urban</h3>
+                        <p style="margin: 0;">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 
                             atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
                     </div>
                     <ul>
-                        <li>
-                            <h3>Fisma: Design and Prototype</h3>
+                        <li class="grid_list f">
+                            <img src="resources/images/thesis-fisma.jpg" alt="highlighters">
+                            <div style="margin-left: 16px; align-self: center;">
+                                <h3>Fisma: Design and Prototype</h3>
+                                <p>Designer showcase of new prototype product</p>
+                            </div>
                         </li>
-                        <li>
-                            <h3>Now and then</h3>
+                        <li class="grid_list g">
+                            <img src="resources/images/thesis-now-and-then.jpg" alt="Empire State Building">
+                            <div style="margin-left: 16px; align-self: center;">
+                                <h3>Now and then</h3>
+                                <p>Research study about New York</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </section> 
         </main>
-
         <footer>
-            <h4>&copy; 2016 Colmar Academy: All rights reserved</h4>
-            <h4>Terms &nbsp;&nbsp;&nbsp;Privacy</h4>
+            <h5>&copy; 2016 Colmar Academy: All rights reserved</h5>
+            <h5>Terms &nbsp;&nbsp;&nbsp;Privacy</h5>
         </footer>
-
     </div>
-
 </html>

@@ -2,10 +2,25 @@
     font-family: Montserrat, sans-serif;
 }
 
+h1, h2, h3 {
+    color: rgb(48, 48, 48);
+}
+
+h4 {
+    font-size: 0.9em;
+    color: dodgerblue;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 0.7em;
+    font-weight: normal;
+}
+
 #grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 64px 1fr 128px;
+    grid-template-rows: 64px 1fr 96px;
     grid-template-areas: 
         'header'
         'main'
@@ -13,18 +28,25 @@
 }
 
 #button {
-    color: lightgrey;
+    color: silver;
     background-color: darkslategray;
+    font-size: 1em;
     text-align: center;
     padding-top: 16px;
     padding-bottom: 16px;
+    margin: 16px 0;
 }
 
 #media {
     display: grid;
-    grid-template: repeat(3, 1fr) / 1fr 40%;
-    grid-column-gap: 40px;
+    grid-template: 1fr / 1fr 40%;
+    grid-column-gap: 24px;
     margin: 32px 24px;
+}
+
+#media img {
+    display: inline;
+
 }
 
 header {
@@ -55,6 +77,9 @@ main {
 
 footer {
     grid-area: footer;
+    margin: 16px 24px;
+    display: flex;
+    justify-content: space-between;
 }
 
 img {
@@ -74,6 +99,15 @@ nav li {
 
 ul {
     list-style: none;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 750;
+}
+
+p {
+    font-size: 0.9em;
 }
 
 .grid_main {
@@ -82,12 +116,17 @@ ul {
     width: 100%;
 }
 
+.grid_list {
+    display: grid;
+    grid-template: 1fr / 35% 65%;
+}
+
 .banner {
     display: grid;
     grid-template: 1fr / 1fr 40%;
     grid-column-gap: 40px;
     justify-content: center;
-    background-color: gray;
+    background-color: silver;
     padding: 32px 24px;
 }
 
@@ -110,11 +149,11 @@ ul {
 
 /* practicing grid items */
 .a {
-    grid-area: 1 / 1 / span 2 / span 1;
+
 }
 
 .b {
-    grid-area: 3 / 1 / span 1 / span 1;
+
 }
 
 .b h2 {
@@ -122,31 +161,66 @@ ul {
     margin-bottom: 24px;
 }
 
+.b p, .c p, .d p, .e p, .f p, .g p {
+    margin: 0;
+}
+
 .c {
-    grid-area: 1 / 2 / span 1 / span 1;
+    padding-left: 16px;
+    padding-right: 16px;    
+    padding-bottom: 16px;
 }
 
 .d {
-    grid-area: 2 / 2/ span 1 / span 1;
+    padding: 16px;
 }
 
 .e {
-    grid-area: 3 / 2 / span 2 / span 1;
+    padding: 16px;
+    background-color: silver;
 }
 
 /* thesis exhibit grid items */
 .f {
-
+    padding: 16px;
+    background-color: silver;
 }
 
 .g {
-
+    padding: 16px;
 }
 
-.h {
-
+.learning {
+    background-color: lightgrey;
 }
 
-.i {
+.learning h2,
+.thesis h2 {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding-top: 32px;
+    padding-bottom: 0;
+}
 
+.courses {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 8px 72px;
+}
+
+.box {
+    width: 30%;
+    margin: 24px 0;
+    background-color: white;
+}
+
+.box img {
+    height: auto;
+}
+
+.box h3, p {
+    margin: 16px;
 }
