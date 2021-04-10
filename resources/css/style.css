@@ -37,16 +37,28 @@ h5 {
     margin: 16px 0;
 }
 
-#media {
+#practice {
     display: grid;
     grid-template: 1fr / 1fr 40%;
     grid-column-gap: 24px;
     margin: 32px 24px;
 }
 
-#media img {
+#practice img {
     display: inline;
+    height: auto;
+}
 
+#video {
+    display: grid;
+    grid-template: 1fr / 1fr 40%;
+    grid-column-gap: 24px;
+    margin: 32px 24px;
+}
+
+#video img {
+    display: inline;
+    height: auto;
 }
 
 header {
@@ -147,22 +159,20 @@ p {
     width: 70%;
 }
 
+.visible-mobile {
+    display: none !important;
+}
+
+.practice_text {
+    margin-left: 16px; 
+    align-self: center;
+}
+
 /* practicing grid items */
-.a {
-
-}
-
-.b {
-
-}
 
 .b h2 {
     margin-top: 32px;
     margin-bottom: 24px;
-}
-
-.b p, .c p, .d p, .e p, .f p, .g p {
-    margin: 0;
 }
 
 .c {
@@ -188,6 +198,10 @@ p {
 
 .g {
     padding: 16px;
+}
+
+.b p, .c p, .d p, .e p, .f p, .g p {
+    margin: 0;
 }
 
 .learning {
@@ -223,4 +237,102 @@ p {
 
 .box h3, p {
     margin: 16px;
+}
+
+/* mobile layout */
+
+@media only screen and (max-width: 700px) {
+
+    /* header */
+    header {
+        justify-content: space-around;
+    }
+    
+    /* body */
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .start_here {
+        width: 90%;
+        text-align: center;
+    }
+
+    #practice {
+        grid-template: 1fr / 1fr;
+        margin: 16px;
+    }
+
+    #practice ul {
+        padding: 0;
+    }
+
+    #practice_main {
+        display: none;
+    }
+
+    .grid_list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start !important;
+        width: 100%;
+        padding: 0;
+    }
+
+    .practice_text {
+        align-self: flex-start
+    }
+
+    .c, .d, .e {
+        padding: 0;
+        background-color: white;
+        flex-basis: 100% !important;
+        max-width: 100%;
+    }
+    
+    .visible-mobile {
+        display: block !important;
+    }
+
+    .hidden-mobile {
+        display: none !important;
+    }
+
+    .learning {
+        background-color: white;
+    }
+
+    .learning img, 
+    .learning p {
+        display: none;
+    }
+
+    .courses {
+        background-color: white;
+        flex-direction: column;
+        padding: 16px 16px;
+        align-content: center;
+        margin-bottom: 16px;
+    }
+
+    .box {
+        background-color: lightgrey;
+        width: 100%;
+        margin: 8px 0;
+        padding: 16px 0;
+    }
+
+    .thesis ul,
+    .thesis h3,
+    .thesis p {
+        display: none;
+    }
+
+    #video {
+        grid-template: 1fr / 1fr;
+
+    }
 }
