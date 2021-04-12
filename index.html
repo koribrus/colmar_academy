@@ -9,7 +9,7 @@
         <title>Colmar Academy</title>
     </head>
     <div id="grid">
-        <header>
+        <header class="shadow-header">
             <div class="logo hidden-mobile">
                 <img src="resources/images/ic-logo.svg" alt="Colmar Academy logo" style="display: inline-block; height: 32px; margin-left: 24px;">
                 <p class="text" style="display: inline-block; font-size: 1em;"><span style="font-weight: bolder; 
@@ -37,19 +37,21 @@
             </div>
         </header>
         <main class="grid_main">
-            <div class="banner">
-                <div>
-                    <img class="banner_image" src="resources/images/banner.jpg" alt="Students reading at picnic table">
+            <div class="banner shadow-header">
+                <div class="shadow-banner">
+                    <img class="banner_image" src="resources/images/banner.jpg" alt="Students reading at picnic table" style="display: block" >
                 </div>
                 <div class="start_here">
                     <h1>Learn something new everyday</h1>
                     <h3>Lorem ipsum dolor sit amet, consectetur adeipiscing elit.</h3>
-                    <p id="button">Start here</p>
+                    <p id="button" class="shadow-banner">Start here</p>
                 </div>
             </div>
             <section id="practice">
                 <div id="practice_main">
-                    <img class="a" src="resources/images/information-main.jpg" alt="black man reading">
+                    <div class="shadow">
+                        <img class="a" src="resources/images/information-main.jpg" alt="black man reading" style="display: block">
+                    </div>
                     <div class="b">
                         <h2>It doesn't hurt to keep practicing</h2>
                         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 
@@ -60,7 +62,7 @@
                 <div>
                     <ul>
                         <li class="grid_list c">
-                            <img src="resources/images/information-orientation.jpg" alt="walking path" class="hidden-mobile">
+                            <img src="resources/images/information-orientation.jpg" alt="walking path" class="hidden-mobile shadow">
                             <img src="resources/images/information-orientation-mobile.jpg" alt="walking path" class="visible-mobile">
                             <div class="practice_text">
                                 <h3>Orientation date</h3>
@@ -69,7 +71,7 @@
                             </div>
                         </li>
                         <li class="grid_list d">
-                            <img src="resources/images/information-campus.jpg" alt="study hall" class="hidden-mobile">
+                            <img src="resources/images/information-campus.jpg" alt="study hall" class="hidden-mobile shadow">
                             <img src="resources/images/information-campus-mobile.jpg" alt="study hall" class="visible-mobile">
                             <div class="practice_text">
                                 <h3>Our campus</h3>
@@ -78,7 +80,7 @@
                             </div>
                         </li>
                         <li class="grid_list e">
-                            <img src="resources/images/information-guest-lecture.jpg" alt="Oliver Sack" class="hidden-mobile">
+                            <img src="resources/images/information-guest-lecture.jpg" alt="Oliver Sack" class="hidden-mobile shadow">
                             <img src="resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Sack" class="visible-mobile">
                             <div class="practice_text">
                                 <h3>Our guest lecture</h3>
@@ -89,40 +91,40 @@
                 </div>
                 </ul>
             </section>
-            <section class="learning">
+            <section class="learning shadow-learning">
                 <h2>Start Learning</h2>
                 <div class="courses">
-                    <div class="box">
+                    <div class="box shadow">
                         <img src="resources/images/course-software.jpg" alt="computer screens">
                         <h3>Software engineering</h3>
                         <p style="margin-top: 8px; margin-bottom: 8px;">COURSES</p>
                         <P style="margin-top: 0;">Web Development, Mobile Development, iOT, APIs</P>
                     </div>
-                    <div class="box">
+                    <div class="box shadow">
                         <img src="resources/images/course-computer-art.jpg" alt="mobile phone and coffee">
                         <h3>Computer art</h3>
                         <p style="margin-top: 8px; margin-bottom: 8px;">COURSES</p>
                         <p style="margin-top: 0;">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
                     </div>
-                    <div class="box">
+                    <div class="box shadow">
                         <img src="resources/images/course-design.jpg" alt="film camera in hands">
                         <h3>Design</h3>
                         <p style="margin-top: 8px; margin-bottom: 8px;">COURSES</p>
                         <p style="margin-top: 0;">User Experience Design, User Research, Visual Design</p>
                     </div>
-                    <div class="box">
+                    <div class="box shadow">
                         <img src="resources/images/course-data.jpg" alt="laptop">
                         <h3>Data</h3>
                         <p style="margin-top: 8px; margin-bottom: 8px;">COURSES</p>
                         <p style="margin-top: 0;">Data Science, Big Data, SQL, Data Visualization</p>
                     </div>
-                    <div class="box">
+                    <div class="box shadow">
                         <img src="resources/images/course-business.jpg" alt="chess board">
                         <h3>Business</h3>
                         <p style="margin-top: 8px; margin-bottom: 8px;">COURSES</p>
                         <p style="margin-top: 0;">Product Development, Business Development, Startup</p>
                     </div>
-                    <div class="box">
+                    <div class="box shadow">
                         <img src="resources/images/course-marketing.jpg" alt="smartwatch">
                         <h3>Marketing</h3>
                         <p style="margin-top: 8px; margin-bottom: 8px;">COURSES</p>
@@ -134,7 +136,7 @@
                 <h2>Thesis exhibit</h2>
                 <div id="video">
                     <div>
-                        <video width=100% height=auto controls>
+                        <video width=100% height=auto controls class="shadow">
                             <source src="resources/videos/thesis.mp4" type="video/mp4">
                             Video not supported
                         </video>
@@ -144,14 +146,14 @@
                     </div>
                     <ul>
                         <li class="grid_list f">
-                            <img src="resources/images/thesis-fisma.jpg" alt="highlighters">
+                            <img src="resources/images/thesis-fisma.jpg" alt="highlighters" class="shadow">
                             <div style="margin-left: 16px; align-self: center;">
                                 <h3>Fisma: Design and Prototype</h3>
                                 <p>Designer showcase of new prototype product</p>
                             </div>
                         </li>
                         <li class="grid_list g">
-                            <img src="resources/images/thesis-now-and-then.jpg" alt="Empire State Building">
+                            <img src="resources/images/thesis-now-and-then.jpg" alt="Empire State Building" class="shadow">
                             <div style="margin-left: 16px; align-self: center;">
                                 <h3>Now and then</h3>
                                 <p>Research study about New York</p>

@@ -239,6 +239,26 @@ p {
     margin: 16px;
 }
 
+.shadow {
+    -webkit-box-shadow: 5px 5px 15px 2px rgba(0,0,0,0.25); 
+    box-shadow: 5px 5px 15px 2px rgba(0,0,0,0.25);
+}
+
+.shadow-header {
+    -webkit-box-shadow: 0px -2px 8px 5px rgba(0,0,0,0.45); 
+    box-shadow: 0px -2px 8px 5px rgba(0,0,0,0.45);
+}
+
+.shadow-banner {
+    -webkit-box-shadow: 5px 7px 8px -1px rgba(0,0,0,0.45); 
+    box-shadow: 5px 7px 8px -1px rgba(0,0,0,0.45);
+}
+
+.shadow-learning {
+    -webkit-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.45); 
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.45);
+}
+
 /* mobile layout */
 
 @media only screen and (max-width: 700px) {
