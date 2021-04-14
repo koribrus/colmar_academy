@@ -3,12 +3,12 @@
 }
 
 h1, h2, h3 {
-    color: rgb(48, 48, 48);
+    color: hsl(120, 1%, 26%);
 }
 
 h4 {
     font-size: 0.9em;
-    color: dodgerblue;
+    color: hsl(204, 39%, 55%);
     font-weight: 500;
 }
 
@@ -28,13 +28,22 @@ h5 {
 }
 
 #button {
-    color: silver;
-    background-color: darkslategray;
+    color: hsl(120, 1%, 17%);
+    text-shadow: hsla(80, 1%, 54%, 0.75);
+    background-color: hsl(51, 68%, 45%);
     font-size: 1em;
+    font-weight: bold;
     text-align: center;
     padding-top: 16px;
     padding-bottom: 16px;
     margin: 16px 0;
+    transition: 0.5s ease;
+}
+
+#button:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 #practice {
@@ -101,12 +110,20 @@ img {
 
 nav {
     margin-right: 16px;
+    color: hsl(120, 1%, 17%);
 }
 
 nav li {
     display: inline-block;
     margin-left: 8px;
     margin-right: 8px;
+    transition: text-decoration 0.5s linear 100ms;
+    transition: text-decoration-color 0.5s linear 100ms;
+}
+
+nav li:hover {
+    text-decoration: underline;
+    text-decoration-color:  hsl(120, 1%, 17%) ;
 }
 
 ul {
@@ -131,6 +148,16 @@ p {
 .grid_list {
     display: grid;
     grid-template: 1fr / 35% 65%;
+    transition: background-color 0.25s linear;
+}
+
+.grid_list:hover {
+    background-color: hsl(202, 20%, 92%);
+}
+
+.grid_list h3 {
+    color: hsl(120, 1%, 26%);
+    text-shadow: none;
 }
 
 .banner {
@@ -138,13 +165,18 @@ p {
     grid-template: 1fr / 1fr 40%;
     grid-column-gap: 40px;
     justify-content: center;
-    background-color: silver;
+    background-color: rgb(39, 76, 119);
     padding: 32px 24px;
 }
 
 .banner img {
     max-width: 100%;
     height: auto;
+}
+
+.banner h1, h3 {
+    color: rgb(231, 236, 239);
+    text-shadow: 2px 2px 2px hsla(120, 1%, 17%, 0.75);
 }
 
 .logo {
@@ -176,9 +208,7 @@ p {
 }
 
 .c {
-    padding-left: 16px;
-    padding-right: 16px;    
-    padding-bottom: 16px;
+    padding: 16px;
 }
 
 .d {
@@ -187,13 +217,11 @@ p {
 
 .e {
     padding: 16px;
-    background-color: silver;
 }
 
 /* thesis exhibit grid items */
 .f {
     padding: 16px;
-    background-color: silver;
 }
 
 .g {
@@ -205,7 +233,7 @@ p {
 }
 
 .learning {
-    background-color: lightgrey;
+    background-color: hsl(207, 74%, 79%);
 }
 
 .learning h2,
@@ -215,6 +243,16 @@ p {
     margin: 0;
     padding-top: 32px;
     padding-bottom: 0;
+}
+
+.learning h3 {
+    color: hsl(120, 1%, 26%);
+    text-shadow: none;
+}
+
+.thesis h3 {
+    color: hsl(120, 1%, 26%);
+    text-shadow: none;
 }
 
 .courses {
@@ -229,6 +267,13 @@ p {
     width: 30%;
     margin: 24px 0;
     background-color: white;
+    transition: 0.5s ease;
+}
+
+.box:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .box img {
